@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'IranNastaliq';
-    src: url('fonts/IranNastaliq.ttf') format('truetype');
+    src: url('IranNastaliq.ttf') format('truetype');
 }
 
 @font-face {
@@ -18,7 +18,7 @@ body {
 
 /* استایل صفحه اصلی */
 .home-page {
-    background: url('images/milad_tower.jpg') no-repeat center center fixed;
+    background: url('milad_tower.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
     height: 100vh;
@@ -69,7 +69,7 @@ body {
 
 /* استایل صفحه شهرها */
 .cities-page {
-    background: url('images/ferdowsi.jpg') no-repeat center center fixed;
+    background: url('ferdowsi.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
     position: relative;
