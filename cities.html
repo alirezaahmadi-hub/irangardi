@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گردشگری ایران</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cities-page">
+    <h1 class="persian-text">چو ایران نباشد تن من مباد</h1>
+
+    <div class="city-container">
+        <div class="city-card" onclick="showCity('Tehran')">
+            <img src="images/tehran.jpg" alt="تهران">
+            <p>تهران</p>
+        </div>
+        <div class="city-card" onclick="showCity('Mashhad')">
+            <img src="images/mashhad.jpg" alt="مشهد">
+            <p>مشهد</p>
+        </div>
+        <div class="city-card" onclick="showCity('Qeshm')">
+            <img src="images/qeshm.jpg" alt="قشم">
+            <p>قشم</p>
+        </div>
+        <div class="city-card" onclick="showCity('Kish')">
+            <img src="images/kish.jpg" alt="کیش">
+            <p>کیش</p>
+        </div>
+        <div class="city-card" onclick="showCity('Rasht')">
+            <img src="images/rasht.jpg" alt="رشت">
+            <p>رشت</p>
+        </div>
+        <div class="city-card" onclick="showCity('Kerman')">
+            <img src="images/kerman.jpg" alt="کرمان">
+            <p>کرمان</p>
+        </div>
+        <div class="city-card" onclick="showCity('Arak')">
+            <img src="images/arak.jpg" alt="اراک">
+            <p>اراک</p>
+        </div>
+    </div>
+
+    <div id="map-container">
+        <iframe id="map" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="watermark">alireza ahmadi</div>
+
+    <script>
+        function showCity(city) {
+            const maps = {
+                'Tehran': 'https://www.google.com/maps?q=Tehran&output=embed',
+                'Mashhad': 'https://www.google.com/maps?q=Mashhad&output=embed',
+                'Qeshm': 'https://www.google.com/maps?q=Qeshm&output=embed',
+                'Kish': 'https://www.google.com/maps?q=Kish&output=embed',
+                'Rasht': 'https://www.google.com/maps?q=Rasht&output=embed',
+                'Kerman': 'https://www.google.com/maps?q=Kerman&output=embed',
+                'Arak': 'https://www.google.com/maps?q=Arak&output=embed'
+            };
+            document.getElementById('map').src = maps[city];
+        }
+    </script>
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پخش صدا در همه صفحات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>به صفحه اصلی خوش آمدید</h1>
+    <p>روی اسپیکر کلیک کنید تا صدا پخش شود.</p>
+
+    <audio id="backgroundAudio" loop>
+        <source src="sounds/mysound.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="audioButton">
+        🔊
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
